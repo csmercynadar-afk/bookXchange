@@ -1,0 +1,14 @@
+# dependencies & builds
+node_modules/
+dist/
+build/
+
+# SECRETS - never commit these
+.env
+.env.*
+!.env.example
+
+# logs / misc
+*.log
+.DS_Store
+.vscode/

@@ -1,5 +1,6 @@
-// override:true => values in backend/.env win over stray Windows environment variables
+// override:true => values in backend/.env win over stray Windows envi.ronment variables
 // (a leftover system PORT=20128 was what caused the EADDRINUSE crash)
+require("dns").setDefaultResultOrder("ipv4first");
 require("dotenv").config({ override: true });
 const express = require("express");
 const cors = require("cors");
